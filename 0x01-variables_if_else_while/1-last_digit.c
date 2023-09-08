@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  * main - entry point
- * description: A C program that print with print function
+ * description: A C program that print with put function
  * Return: always 0
  */
 int main(void)
@@ -15,10 +15,10 @@ int main(void)
 	n = rand() - RAND_MAX / 2;
 	ld = n % 10;
 	if (ld > 5)
-		printf("Last digit of %d is greater than 5\n", n, ld);
-	if (ld == 0)
-		printf("Last digit of %d is zero\n", n, ld);
+		printf("Last digit of %d is %d and is greater than 5\n", n, ld);
 	if (ld < 6 && ld != 0)
-		printf("Last digit of %d is less than 6 and not 0\n", n, ld);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, ld);
+	if (ld == 0)
+		printf("Last digit of %d is %d and is 0\n", n, ld);
 	return (0);
 }
