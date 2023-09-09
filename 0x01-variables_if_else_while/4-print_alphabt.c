@@ -8,13 +8,13 @@
 
 int main(void)
 {
-	char i = 48;
+	char i = 'a';
 
-	while (i <= 57)
+	while (i <= 'z')
 	{
-		if (i == 'q' || i == 'e')
-			i++;
+		if (i != 'e' && i != 'q') {
 		putchar(i);
+		}
 		i++;
 	}
 	putchar('\n');
