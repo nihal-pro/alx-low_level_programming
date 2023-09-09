@@ -16,8 +16,8 @@ int main(void)
 		{
 			if (i != o && i < o)
 			{
-				putchar(i + 48);
-				putchar(o + 48);
+				putchar((i % 10) + '0');
+				putchar((o % 10) + '0');
 
 				if (i + o != 17)
 				{
