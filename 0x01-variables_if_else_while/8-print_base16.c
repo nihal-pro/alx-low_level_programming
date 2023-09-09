@@ -1,20 +1,25 @@
 #include <stdio.h>
+
 /**
  * main - entry point
  * description: A C program that print with put function
  * Return: always 0
  */
+
 int main(void)
 {
-	int i = 48;
+	int i = 0;
+	char c = 'f';
 
-	while (i <= 102)
+	while (i < 10)
 	{
-		putchar(i);
-
-		if (i == 57)
-			i +=  39;
+		putchar((i % 10) + '0');
 		i++;
+	}
+	while (c <= 'f')
+	{
+		putchar(c);
+		c++;
 	}
 	putchar('\n');
 	return (0);
