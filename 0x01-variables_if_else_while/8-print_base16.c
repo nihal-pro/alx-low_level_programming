@@ -8,10 +8,9 @@
 
 int main(void)
 {
-	int i = 0;
 	char hexDigits = "0123456789abcdef";
 
-	while (i < 16)
+	for (int i = 0; i < 16; i++)
 	{
 		putchar(hexDigits[i]);
 		i++;
