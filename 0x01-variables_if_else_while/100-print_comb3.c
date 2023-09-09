@@ -6,25 +6,26 @@
  */
 int main(void)
 {
-	int i = 0, j = i;
+	int i = 0, o;
 
-	while (i <= 8)
+	while (i <= 9)
 	{
 
-		while (j <= 9)
+		o = 0;
+		while (o <= 9)
 		{
-			if (i != o && i < j)
+			if (i != o && i < o)
 			{
-				putchar((i % 10) + '0');
-				putchar((j % 10) + '0');
+				putchar(i + 48);
+				putchar(o + 48);
 
-				if (i + j != 17)
+				if (i + o != 17)
 				{
 					putchar(',');
 					putchar(' ');
 				}
 			}
-			j++;
+			o++;
 		}
 		i++;
 	}
