@@ -9,17 +9,12 @@
 int main(void)
 {
 	int i = 0;
-	char o = 'a';
+	char hexDigits = "0123456789abcdef";
 
-	while (i <= '9')
+	while (i < 16)
 	{
-		putchar(i + '0');
+		putchar(hexDigits[i]);
 		i++;
-	}
-	while (o <= 'f')
-	{
-		putchar(o);
-		o++;
 	}
 	putchar('\n');
 	return (0);
