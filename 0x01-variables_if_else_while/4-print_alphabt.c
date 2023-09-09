@@ -8,12 +8,12 @@
 
 int main(void)
 {
-	char i = 'a';
+	char i = 48;
 
-	while (i <= 'z')
+	while (i <= 57)
 	{
-		if ((i = 'q' || i = 'e')
-			i++;	
+		if (i == 'q' || i == 'e')
+			i++;
 		putchar(i);
 		i++;
 	}
