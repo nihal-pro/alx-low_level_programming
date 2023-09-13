@@ -19,5 +19,7 @@ int print_last_digit(int n)
 		return (c);
 	}
 
+	_putchar(c + '0');
+
 	return (c);
 }
