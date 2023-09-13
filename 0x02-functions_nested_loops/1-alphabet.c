@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * main - entry point
- * description: A C program that print with putchar function
+ * print_alphabet - fonction
+ * print_alphabet: fonction that print alphabets in lower case
+ * Return: always 0
  */
 void print_alphabet(void)
 {
@@ -10,7 +11,7 @@ void print_alphabet(void)
 	while (i <= 'z')
 	{
 		_putchar(i);
-		_putchar('\n');
 		i++;
 	}
+	_putchar('\n');
 }
