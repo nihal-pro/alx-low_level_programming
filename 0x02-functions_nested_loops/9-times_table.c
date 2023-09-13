@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * times_table - fonction
- * times_table: fonction that print 9 time
+ * times_table: fonction that print time
  *
  * Return: 0
  */
@@ -14,12 +14,17 @@ void times_table(void)
 	{
 		for (j = 0 ; j < 10 ; j++)
 		{
-			u = j * i;
-		        printf("%d, ", u);
-		}
-		if (j != 9)
+			u = i * j;
+		if (j == 0)
 		{
+			printf("%d, ", u);
+		}
+		else
+		{
+			printf("%2d", u);
+		if (j != 9)
 			printf(", ");
+		}
 		}
 		printf("\n");
 	}
