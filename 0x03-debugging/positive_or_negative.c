@@ -1,9 +1,9 @@
 #include "main.h"
 /**
- * main - entry point
- * description: A C program that print with put function
- * Return: always 0
- */
+  * positive_or_negative - Checks if number is positif or negatif
+  *@i: The integer to be checked
+  *
+  */
 void positive_or_negative(int i)
 {
 
