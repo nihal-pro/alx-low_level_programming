@@ -12,7 +12,6 @@ void print_error(void)
 	_putchar('r');
 	_putchar('\n');
 }
-
 /**
  * is_valid_digit - Checks if a character is a valid digit.
  * @c: The character to check.
